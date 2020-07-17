@@ -33,6 +33,9 @@ public class Pregunta2 extends AppCompatActivity {
         int n = rand.nextInt(3) + 2;
         if(puntos==5){
             Toast.makeText(this,"Ganaste",Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this,Gana.class);
+            startActivity(i);
+            finish();
         }
         else if(n==2 && puntos!=0){
             Intent i = new Intent(this,Pregunta1.class);

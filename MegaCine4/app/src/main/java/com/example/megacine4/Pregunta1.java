@@ -28,11 +28,11 @@ public class Pregunta1 extends AppCompatActivity {
         Random rand = new Random();
         int n = rand.nextInt(3) + 2;
         if(puntos==5){
+            Toast.makeText(this,"Ganaste",Toast.LENGTH_SHORT).show();
             Intent i = new Intent(this,Gana.class);
-            i.putExtra("puntos",puntos);
             startActivity(i);
             finish();
-            Toast.makeText(this,"Ganaste",Toast.LENGTH_SHORT).show();
+
         }
         else if(n==2 && puntos!=0){
             Intent i = new Intent(Pregunta1.this,Pregunta2.class);
