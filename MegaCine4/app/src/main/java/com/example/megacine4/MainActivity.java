@@ -26,22 +26,27 @@ public class MainActivity extends AppCompatActivity {
         int n = rand.nextInt(4) + 1;
         if (n == 1) {
             Intent intent = new Intent(this, Pregunta1.class);
+            intent.putExtra("puntos",puntos);
             startActivity(intent);
         }
         else if (n == 2) {
             Intent intent = new Intent(this, Pregunta2.class);
+            intent.putExtra("puntos",puntos);
             startActivity(intent);
         }
         else if (n == 3) {
             Intent intent = new Intent(this, Pregunta3.class);
+            intent.putExtra("puntos",puntos);
             startActivity(intent);
         }
         else if (n == 4) {
             Intent intent = new Intent(this, Pregunta4.class);
+            intent.putExtra("puntos",puntos);
             startActivity(intent);
         }
         else {
             Intent intent = new Intent(this, Pregunta5.class);
+            intent.putExtra("puntos",puntos);
             startActivity(intent);
         }
     }
