@@ -69,7 +69,7 @@ public class Pregunta2 extends AppCompatActivity {
 
     public void incorrecto(View v){
         Toast.makeText(this,"Perdiste",Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(this,Pregunta2.class);
+        Intent i = new Intent(this,Pierde.class);
         i.putExtra("puntos",puntos);
         startActivity(i);
         finish();
